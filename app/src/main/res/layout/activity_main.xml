@@ -1,0 +1,119 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/main"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity">
+
+    <TextView
+        android:id="@+id/tvAluno"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="16dp"
+        android:layout_marginTop="16dp"
+        android:text="@string/nome_aluno"
+        app:layout_constraintBottom_toTopOf="@+id/tvRa"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:id="@+id/tvRa"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="66dp"
+        android:text="@string/ra_aluno"
+        app:layout_constraintBottom_toTopOf="@+id/tvTitulo"
+        app:layout_constraintStart_toStartOf="@+id/tvAluno"
+        app:layout_constraintTop_toBottomOf="@+id/tvAluno" />
+
+    <TextView
+        android:id="@+id/tvTitulo"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="49dp"
+        android:text="@string/separar_titulo"
+        android:textSize="24sp"
+        app:layout_constraintBottom_toTopOf="@+id/etNumero"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/tvRa" />
+
+    <EditText
+        android:id="@+id/etNumero"
+        android:layout_width="0dp"
+        android:layout_height="48dp"
+        android:layout_marginStart="61dp"
+        android:layout_marginTop="201dp"
+        android:layout_marginEnd="61dp"
+        android:layout_marginBottom="103dp"
+        android:ems="10"
+        android:hint="@string/entrada_hint"
+        android:importantForAutofill="no"
+        android:inputType="number"
+        android:maxLength="3"
+        android:textColorHint="@color/cinza_hint"
+        app:layout_constraintBottom_toTopOf="@+id/tvErro"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <Button
+        android:id="@+id/btnSeparar"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/separar"
+        app:layout_constraintBottom_toTopOf="@+id/tvErro"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.498"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/etNumero"
+        app:layout_constraintVertical_bias="0.736" />
+
+    <TextView
+        android:id="@+id/tvCentena"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="32dp"
+        android:textSize="20sp"
+        app:layout_constraintBottom_toTopOf="@+id/tvDezena"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/tvErro" />
+
+    <TextView
+        android:id="@+id/tvDezena"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="41dp"
+        android:textSize="20sp"
+        app:layout_constraintBottom_toTopOf="@+id/tvUnidade"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/tvCentena" />
+
+    <TextView
+        android:id="@+id/tvUnidade"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="157dp"
+        android:textSize="20sp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/tvDezena" />
+
+    <TextView
+        android:id="@+id/tvErro"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="41dp"
+        android:textColor="@color/vermelho_erro"
+        android:textSize="20sp"
+        app:layout_constraintBottom_toTopOf="@+id/tvCentena"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.498"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/etNumero" />
+</androidx.constraintlayout.widget.ConstraintLayout>

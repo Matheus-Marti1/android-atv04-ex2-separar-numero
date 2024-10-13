@@ -1,0 +1,9 @@
+<resources>
+    <string name="app_name">Atv4Ex2Unidades</string>
+    <string name="nome_aluno">Matheus Augusto Marti</string>
+    <string name="ra_aluno">RA: 1110482313017</string>
+    <string name="separar_titulo">Separar número</string>
+    <string name="entrada_hint">Insira um número entre 100 e 999</string>
+    <string name="erro">Erro: insira um número entre 100 e 999</string>
+    <string name="separar">Separar</string>
+</resources>
